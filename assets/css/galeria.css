@@ -1,3 +1,23 @@
+@media screen and (max-width: 768px) {
+    .carousel {
+        display: block;
+    }
+
+    .card-columns {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .carousel {
+        display: none;
+    }
+
+    .card-columns {
+        display: block;
+    }
+}
+
 .card-columns {
     @media screen and (min-width: 576px) {
         column-count: 2;
