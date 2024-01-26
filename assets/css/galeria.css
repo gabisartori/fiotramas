@@ -47,3 +47,7 @@ a:hover {
     color: black;
     text-decoration: none;
 }
+
+.carousel-control-next, .carousel-control-prev {
+    filter: invert(50%);
+}
