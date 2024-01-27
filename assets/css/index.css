@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'linka';
-    src: url('../fonts/linka.ttf');
+    src: url('../fonts/linka.ttf') format('truetype');
 }
 
 body {
