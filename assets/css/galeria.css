@@ -31,14 +31,53 @@
 }
 
 .card {
-    display: inline-block;
+    border-radius: 1rem;
     margin-bottom: 1rem;
+    background-color: var(--highlight-background);
+    font-size: .75rem;
+    padding: 1rem 0.5rem;
+}
+
+.card-columns .card {
+    display: inline-block;
 }
 
 .card-title {
     font-size: 1rem;
 }
 
+.card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.card a {
+    display: block;
+} 
+
+.see-more, .see-more:hover {
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    background-color: var(--highlight-text);
+    padding: .5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
 .carousel-control-next, .carousel-control-prev {
     filter: invert(50%);
+}
+
+h1 {
+    font-family: linka;
+    font-size: 3rem;
+    color: var(--highlight-text);
+}
+
+img {
+    border-radius: 1rem !important;
 }
