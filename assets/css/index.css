@@ -1,6 +1,10 @@
 :root {
     --farm-pink: #D45487;
-    --background-pink: rgb(255, 230, 230);
+    --background-pink: #FDEDEF;
+    --highlight-background: #FADEE1;;
+    --text-color: #6C565A;
+    --highlight-text: #CC797F;
+
 }
 
 @font-face {
@@ -9,18 +13,23 @@
 }
 
 body {
-    background-color: var(--background-pink);
+    background: var(--background, linear-gradient(255deg, #FADEE1 7.52%, #FDEDEF 96.99%));
 }
 
 /* Navbar */
 nav {
-    background-color: var(--farm-pink);
+    background-color: var(--highlight-background);
 }
 
 nav * {
     font-family: linka;
-    color: white;
+    color: var(--highlight-text);
     font-size: 1.5rem;
+}
+
+nav h1 {
+    color: var(--highlight-text) !important;
+    text-align: justify;
 }
 
 nav a {
@@ -29,10 +38,15 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--background-pink);
+    color: var(--text-color);
+}
+
+nav span {
+    color: var(--text-color);
 }
 
 /* Footer */
 footer {
-    padding: 3rem;
+    padding: 1.5rem 0 3rem 0;
+    background-color: var(--highlight-background);
 }
