@@ -4,7 +4,8 @@
     --highlight-background: #FADEE1;;
     --text-color: #6C565A;
     --highlight-text: #CC797F;
-
+    --dark-background: #67202B;
+    --bright-text: #F6CCD1;
 }
 
 @font-face {
