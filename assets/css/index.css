@@ -1,0 +1,53 @@
+:root {
+    --farm-pink: #D45487;
+    --background-pink: #FDEDEF;
+    --highlight-background: #FADEE1;;
+    --text-color: #6C565A;
+    --highlight-text: #CC797F;
+    --dark-background: #67202B;
+    --bright-text: #F6CCD1;
+}
+
+@font-face {
+    font-family: 'linka';
+    src: url('../fonts/linka.ttf') format('truetype');
+}
+
+body {
+    background: var(--background, linear-gradient(255deg, #FADEE1 7.52%, #FDEDEF 96.99%));
+}
+
+/* Navbar */
+nav {
+    background-color: var(--highlight-background);
+}
+
+nav * {
+    font-family: linka;
+    color: var(--highlight-text);
+    font-size: 1.5rem;
+}
+
+nav h1 {
+    color: var(--highlight-text) !important;
+    text-align: justify;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    color: var(--text-color);
+}
+
+nav span {
+    color: var(--text-color);
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem 0 3rem 0;
+    background-color: var(--highlight-background);
+}

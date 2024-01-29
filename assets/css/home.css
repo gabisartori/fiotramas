@@ -1,0 +1,69 @@
+/* Begin of Cover */
+.cover {
+    background-color: var(--dark-background);
+    height: 100vh;
+}
+
+.cover img {
+    width: 100%;
+    max-height: 50%;
+}
+
+.quote-box {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 2rem;
+    color: var(--bright-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quote-author {
+    font-family: linka;
+    font-size: 2.5rem;
+    color: var(--highlight-background);
+}
+
+.see-work, .see-work:hover {
+    color: white;
+    background-color: var(--highlight-text);
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+/* End of cover */
+
+/* Presentation texts */
+article {
+    color: var(--text-color);
+    margin-top: 1.25rem;
+}
+
+article section {
+    margin-bottom: 15rem;
+}
+
+.background-text-container {
+    position: relative;
+}
+
+.background-text {
+    font-family: linka;
+    font-size: 8rem;
+    color: var(--highlight-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-text-container img {
+    margin: 5rem 0;
+}
+
+/* End of Presentation texts */
