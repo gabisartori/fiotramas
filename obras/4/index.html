@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../assets/css/obras.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-md p-3 sticky-top">
+    <nav class="navbar navbar-light navbar-expand-md p-3 sticky-top">
         <a href="../../">
             <h1 class="navbar-brand m-0">ENTRE FIOS&TRAMAS<br><span>TRANS</span>GRESSOES DE GENERO</h1>
         </a>
@@ -37,24 +37,62 @@
     <section class="container mt-5" id="display">
         <!-- Imagem, ficha técnica e primeiro parágrafo -->
         <div class="row">
-            <div class="col-6">
-                <img src="../../assets/images/obra04.png" alt="Quarta obra da exposição">
+            <div class="col-md-6">
+                <img class="mb-2" src="../../assets/images/obra04.png" alt="Quarta obra da exposição">
             </div>
-            <div class="col-6 d-flex flex-column">
+            <div class="col-md-6 d-flex flex-column">
                 <div class="details">
-                    <h2>FICHA TÉCNICA</h2>
-                    <div class="row">
-                        <div class="col-4 fw-bold">TÉCNICA:<br>DIMENSÃO:<br>MATERAIS:</div>
-                        <div class="col-6">
-                            mista<br>
-                            37cm x 33cm<br>
-                            Base em MDF, tecido, gesso, tinta spray, linha de bordar, renda, aplicações em pérola.<br>
-                            2023
+                    <!-- Large screen -->
+                    <div class="d-none d-lg-block">
+                        <h2>FICHA TÉCNICA</h2>
+                        <div class="row mt-3">
+                            <div class="col fw-bold">TÉCNICA: </div>
+                            <div class="col">Mista</div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col fw-bold">DIMENSÕES: </div>
+                            <div class="col">37cm x 33cm</div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col fw-bold">MATERIAIS: </div>
+                            <div class="col">Base em MDF, tecido, gesso, tinta spray, linha de bordar, renda, aplicações em pérola.</div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col"></div>
+                            <div class="col">2023</div>
                         </div>
                     </div>
-                </div>    
+                    <!-- Small screen -->
+                    <div class="d-lg-none">
+                        <div class="navbar navbar-light navbar-expand-lg">
+                            <span class="h3">FICHA TÉCNICA</span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDetails" aria-controls="collapseDetails">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div id="collapseDetails" class="collapse navbar-collapse">
+                            <div class="row mt-2">
+                                <div class="col fw-bold">TÉCNICA: </div>
+                                <div class="col">Mista</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col fw-bold">DIMENSÕES: </div>
+                                <div class="col">37cm x 33cm</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col fw-bold">MATERIAIS: </div>
+                                <div class="col">Base em MDF, tecido, gesso, tinta spray, linha de bordar, renda, aplicações em pérola.</div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col"></div>
+                                <div class="col">2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="mt-auto">
-                    <p class="text-end">Durante a infância, buscava nos outros algo semelhante para validar minha existência, mas, infelizmente, os olhares que me retornavam destacavam sempre o quanto eu era percebida como diferente. Com o tempo, esses olhares passaram a rotular essas diferenças, resultando em contínuos processos de violência psicológica. Agora, compreendendo-me como travesti, percebo os olhares que se dirigem ao meu corpo ao transitar por diferentes espaços. Alguns desses olhares continuam a me violentar mas sei que em algum lugar, alguém me observa, podendo reconhecer e validar sua própria existência através da minha jornada.</p>
+                    <p class="work-intro">Durante a infância, buscava nos outros algo semelhante para validar minha existência, mas, infelizmente, os olhares que me retornavam destacavam sempre o quanto eu era percebida como diferente. Com o tempo, esses olhares passaram a rotular essas diferenças, resultando em contínuos processos de violência psicológica. Agora, compreendendo-me como travesti, percebo os olhares que se dirigem ao meu corpo ao transitar por diferentes espaços. Alguns desses olhares continuam a me violentar mas sei que em algum lugar, alguém me observa, podendo reconhecer e validar sua própria existência através da minha jornada.</p>
                 </div>
             </div>
         </div>
@@ -86,7 +124,7 @@
 
     <!-- Continuar explorando -->
     <section class="container mt-5">
-        <h2 class="other-works mb-3">CONTINUAR EXPLORANDO</h2>
+        <h2 class="other-works mb-3 fs-1">CONTINUAR EXPLORANDO</h2>
         <!-- Cards -->
         <div id="other-works" class="card-columns">
     </section>

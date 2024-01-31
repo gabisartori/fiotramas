@@ -11,8 +11,6 @@ img {
 }
 
 .details {
-    font-size: 1.5rem;
-    line-height: 3rem;
     font-family: serif;
 }
 
@@ -25,7 +23,7 @@ img {
 .other-works {
     font-family: linka;
     color: var(--highlight-text);
-    font-size: 4rem;
+    /* font-size: 4rem; */
 }
 
 /* Random cards */
@@ -77,4 +75,14 @@ img {
     padding: .5rem;
     border-radius: .5rem;
     text-decoration: none;
+}
+
+.work-intro {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .work-intro {
+        text-align: left;
+    }
 }

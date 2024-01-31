@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../assets/css/obras.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-md p-3 sticky-top">
+    <nav class="navbar navbar-light navbar-expand-md p-3 sticky-top">
         <a href="../../">
             <h1 class="navbar-brand m-0">ENTRE FIOS&TRAMAS<br><span>TRANS</span>GRESSOES DE GENERO</h1>
         </a>
@@ -37,24 +37,62 @@
     <section class="container mt-5" id="display">
         <!-- Imagem, ficha técnica e primeiro parágrafo -->
         <div class="row">
-            <div class="col-6">
-                <img src="../../assets/images/obra05.png" alt="Quinta obra da exposição">
+            <div class="col-md-6">
+                <img class="mb-2" src="../../assets/images/obra05.png" alt="Quinta obra da exposição">
             </div>
-            <div class="col-6 d-flex flex-column">
+            <div class="col-md-6 d-flex flex-column">
                 <div class="details">
-                    <h2>FICHA TÉCNICA</h2>
-                    <div class="row">
-                        <div class="col-4 fw-bold">TÉCNICA:<br>DIMENSÃO:<br>MATERAIS:</div>
-                        <div class="col-6">
-                            mista<br>
-                            40cm x 20cm<br>
-                            Tinta acrílica sobre tela, tecido, algodão, linha de bordar, apliques.<br>
-                            2023
+                    <!-- Large screen -->
+                    <div class="d-none d-lg-block">
+                        <h2>FICHA TÉCNICA</h2>
+                        <div class="row mt-3">
+                            <div class="col fw-bold">TÉCNICA: </div>
+                            <div class="col">Mista</div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col fw-bold">DIMENSÕES: </div>
+                            <div class="col">40cm x 20cm</div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col fw-bold">MATERIAIS: </div>
+                            <div class="col">Tinta acrílica sobre tela, tecido, algodão, linha de bordar, apliques.</div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col"></div>
+                            <div class="col">2023</div>
                         </div>
                     </div>
-                </div>    
+                    <!-- Small screen -->
+                    <div class="d-lg-none">
+                        <div class="navbar navbar-light navbar-expand-lg">
+                            <span class="h3">FICHA TÉCNICA</span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDetails" aria-controls="collapseDetails">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div id="collapseDetails" class="collapse navbar-collapse">
+                            <div class="row mt-2">
+                                <div class="col fw-bold">TÉCNICA: </div>
+                                <div class="col">Mista</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col fw-bold">DIMENSÕES: </div>
+                                <div class="col">40cm x 20cm</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col fw-bold">MATERIAIS: </div>
+                                <div class="col">Tinta acrílica sobre tela, tecido, algodão, linha de bordar, apliques.</div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col"></div>
+                                <div class="col">2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="mt-auto">
-                    <p class="text-end">Em um mundo baseado em percepções binárias de gênero, ao reivindicar-se enquanto pessoa trans estamos sujeitas a imposições sociais para nos encaixarmos novamente em um padrão idealizado de gênero. A pressão estética que recai sobre corpos trans, faz com que vivamos constantes crises de disforia por nos vermos distantes destes ideais. O sentimento de insatisfação e rejeição do próprio corpo faz com que muitas pessoas recorram a procedimentos indevidos, na busca por se adequar a estes padrões.</p>
+                    <p class="work-intro">Em um mundo baseado em percepções binárias de gênero, ao reivindicar-se enquanto pessoa trans estamos sujeitas a imposições sociais para nos encaixarmos novamente em um padrão idealizado de gênero. A pressão estética que recai sobre corpos trans, faz com que vivamos constantes crises de disforia por nos vermos distantes destes ideais. O sentimento de insatisfação e rejeição do próprio corpo faz com que muitas pessoas recorram a procedimentos indevidos, na busca por se adequar a estes padrões.</p>
                 </div>
             </div>
         </div>
@@ -86,7 +124,7 @@
 
     <!-- Continuar explorando -->
     <section class="container mt-5">
-        <h2 class="other-works mb-3">CONTINUAR EXPLORANDO</h2>
+        <h2 class="other-works mb-3 fs-1">CONTINUAR EXPLORANDO</h2>
         <!-- Cards -->
         <div id="other-works" class="card-columns">
     </section>
