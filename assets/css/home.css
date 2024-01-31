@@ -1,29 +1,31 @@
 /* Begin of Cover */
 .cover {
     background-color: var(--dark-background);
-    height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
 }
 
 .cover img {
     width: 100%;
-    max-height: 50%;
+    max-height: 75vh;
+    object-fit: fill;
 }
 
 .quote-box {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
 .quote-text {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     color: var(--bright-text);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .quote-author {
     font-family: linka;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
     color: var(--highlight-background);
 }
 
@@ -42,8 +44,9 @@ article {
     margin-top: 1.25rem;
 }
 
-article section {
-    margin-bottom: 15rem;
+h1, h2 {
+    font-family: linka;
+    color: var(--highlight-text);
 }
 
 .background-text-container {
@@ -62,8 +65,11 @@ article section {
     overflow: hidden;
 }
 
-.background-text-container img {
-    margin: 5rem 0;
+.vertical {
+    margin-top: auto;
+    font-family: linka;
+    color: var(--highlight-text);
+    transform: rotate(-90deg) translate(40%, 50%);
 }
 
 /* End of Presentation texts */
