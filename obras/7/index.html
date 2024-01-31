@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../assets/css/obras.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-md p-3 sticky-top">
+    <nav class="navbar navbar-light navbar-expand-md p-3 sticky-top">
         <a href="../../">
             <h1 class="navbar-brand m-0">ENTRE FIOS&TRAMAS<br><span>TRANS</span>GRESSOES DE GENERO</h1>
         </a>
@@ -37,24 +37,62 @@
     <section class="container mt-5" id="display">
         <!-- Imagem, ficha técnica e primeiro parágrafo -->
         <div class="row">
-            <div class="col-6">
-                <img src="../../assets/images/obra07.png" alt="Sétima obra da exposição">
+            <div class="col-md-6">
+                <img class="mb-2" src="../../assets/images/obra07.png" alt="Sétima obra da exposição">
             </div>
-            <div class="col-6 d-flex flex-column">
+            <div class="col-md-6 d-flex flex-column">
                 <div class="details">
-                    <h2>FICHA TÉCNICA</h2>
-                    <div class="row">
-                        <div class="col-4 fw-bold">TÉCNICA:<br>DIMENSÃO:<br>MATERAIS:</div>
-                        <div class="col-6">
-                            mista<br>
-                            30cm x 30cm<br>
-                            Peneira de aço, tinta spray, tecido, linha de bordar, miçangas.<br>
-                            2023
+                    <!-- Large screen -->
+                    <div class="d-none d-lg-block">
+                        <h2>FICHA TÉCNICA</h2>
+                        <div class="row mt-3">
+                            <div class="col fw-bold">TÉCNICA: </div>
+                            <div class="col">Mista</div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col fw-bold">DIMENSÕES: </div>
+                            <div class="col">30cm x 30cm</div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col fw-bold">MATERIAIS: </div>
+                            <div class="col">Peneira de aço, tinta spray, tecido, linha de bordar, miçangas.</div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col"></div>
+                            <div class="col">2023</div>
                         </div>
                     </div>
-                </div>    
+                    <!-- Small screen -->
+                    <div class="d-lg-none">
+                        <div class="navbar navbar-light navbar-expand-lg">
+                            <span class="h3">FICHA TÉCNICA</span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDetails" aria-controls="collapseDetails">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div id="collapseDetails" class="collapse navbar-collapse">
+                            <div class="row mt-2">
+                                <div class="col fw-bold">TÉCNICA: </div>
+                                <div class="col">Mista</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col fw-bold">DIMENSÕES: </div>
+                                <div class="col">30cm x 30cm</div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col fw-bold">MATERIAIS: </div>
+                                <div class="col">Peneira de aço, tinta spray, tecido, linha de bordar, miçangas.</div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col"></div>
+                                <div class="col">2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="mt-auto">
-                    <p class="text-end">Imagine que a cirurgia de redesignação de gênero para uma mulher trans seja comparável a um capítulo final em um livro que muitos insistem em considerar como obrigatório para validar toda a narrativa. É como se a sociedade visse essa cirurgia como a última página que deve ser alcançada para validar a jornada de uma mulher trans, ignorando ou minimizando toda a história anterior, repleta de vivências, desafios e sentimentos que compõem sua identidade. No entanto, focar apenas na cirurgia de redesignação como o ápice da transição de gênero é semelhante a julgar um livro apenas por sua conclusão, sem apreciar ou entender a complexidade e a riqueza de cada capítulo anterior. A real necessidade da cirurgia de redesignação de gênero para uma mulher trans deve ser vista como uma escolha pessoal, não como um marco final que define sua identidade, respeitando-se o direito de cada indivíduo de expressar e viver sua identidade de gênero da maneira que se sente mais autêntico e confortável.</p>
+                    <p class="work-intro">Imagine que a cirurgia de redesignação de gênero para uma mulher trans seja comparável a um capítulo final em um livro que muitos insistem em considerar como obrigatório para validar toda a narrativa. É como se a sociedade visse essa cirurgia como a última página que deve ser alcançada para validar a jornada de uma mulher trans, ignorando ou minimizando toda a história anterior, repleta de vivências, desafios e sentimentos que compõem sua identidade. No entanto, focar apenas na cirurgia de redesignação como o ápice da transição de gênero é semelhante a julgar um livro apenas por sua conclusão, sem apreciar ou entender a complexidade e a riqueza de cada capítulo anterior. A real necessidade da cirurgia de redesignação de gênero para uma mulher trans deve ser vista como uma escolha pessoal, não como um marco final que define sua identidade, respeitando-se o direito de cada indivíduo de expressar e viver sua identidade de gênero da maneira que se sente mais autêntico e confortável.</p>
                 </div>
             </div>
         </div>
@@ -85,7 +123,7 @@
 
     <!-- Continuar explorando -->
     <section class="container mt-5">
-        <h2 class="other-works mb-3">CONTINUAR EXPLORANDO</h2>
+        <h2 class="other-works mb-3 fs-1">CONTINUAR EXPLORANDO</h2>
         <!-- Cards -->
         <div id="other-works" class="card-columns">
     </section>
