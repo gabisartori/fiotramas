@@ -44,32 +44,23 @@ article {
     margin-top: 1.25rem;
 }
 
-h1, h2 {
+.title-text {
     font-family: linka;
     color: var(--highlight-text);
+    font-size: min(calc(1rem + 8vw), 130px);
 }
 
-.background-text-container {
-    position: relative;
-}
-
-.background-text {
+.title-text-small {
     font-family: linka;
-    font-size: 8rem;
     color: var(--highlight-text);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    overflow: hidden;
+    font-size: min(calc(.5rem + 7.5vw), 110px);
 }
 
 .vertical {
-    margin-top: auto;
-    font-family: linka;
-    color: var(--highlight-text);
-    transform: rotate(-90deg) translate(40%, 50%);
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    font-size: calc(1.25rem + 8vh);
 }
 
 /* End of Presentation texts */
